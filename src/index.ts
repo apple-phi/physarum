@@ -15,7 +15,7 @@ window.addEventListener('load', async () => {
 		width,
 		height,
 	};
-	const agents = RandomAgents.circular(0.15 * pixels, 200, width, height); // RandomAgents.rect(0.1 * pixels, 0.1);
+	const agents = RandomAgents.circular(0.4 * pixels, 200, width, height); // RandomAgents.rect(0.1 * pixels, 0.1);
 	const slime = new DynamicSlime(regl, settings, agents)
 		.attachMouseDragTo(canvas)
 		.attachClickPauseTo(canvas);
